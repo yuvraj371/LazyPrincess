@@ -74,9 +74,9 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','moviekingdom522')  # WITHOUT @ [ 
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "MoviesWebseriesHollywoodGroup") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api.shareus.io') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'X2J9CxQZosMUyy4xxbuKB2gwKOM2')
+URL_MODE = is_enabled((environ.get("URL_MODE","False")), False)
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5787509903').split()]
 
 # Auto Delete For Group Message (Self Delete) #
